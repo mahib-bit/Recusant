@@ -22,20 +22,20 @@
     "price": 1920000
   },
   {
-    "id": 3,
-    "name": "Rykard, Lord of Blasphemy",
-    "image": "https://i.ibb.co.com/B2dH9fYM/Eldenringrykardcutscene1.jpg",
-    "place": "Volcano Manor",
-    "role": "Shardbearer",
-    "rating": 9.4,
+    "id": 13,
+    "name": "Messmer the Impaler",
+    "image": "https://i.ibb.co.com/fV4fFpss/messmer-the-impaler-bosses-elden-ring-wiki-1200px.png",
+    "place": "Shadow Keep",
+    "role": "DLC Demigod",
+    "rating": 9.9,
     "immunity": "Fire",
-    "weakness": "Serpent-Hunter Weapon",
-    "price": 1860000
+    "weakness": "Holy Damage",
+    "price": 2000000
   },
   {
     "id": 4,
     "name": "Mohg, Lord of Blood",
-    "image": "https://i.ibb.co.com/ZpddYxhj/Mohg.jpg",
+    "image": "https://i.ibb.co.com/gHfmZqq/mogh.webp",
     "place": "Mohgwyn Palace",
     "role": "Demigod",
     "rating": 9.6,
@@ -79,7 +79,7 @@
   {
     "id": 8,
     "name": "Morgott, the Omen King",
-    "image": "https://i.ibb.co.com/YF3xCGk9/Morgott.jpg",
+    "image": "https://i.ibb.co.com/hxQGrJmQ/morgott-the-omen-king-bosses-elden-ring-wiki-600px.jpg",
     "place": "Leyndell, Royal Capital",
     "role": "Demigod",
     "rating": 9.1,
@@ -112,7 +112,7 @@
   {
     "id": 11,
     "name": "Elden Beast",
-    "image": "https://i.ibb.co.com/7xqmQmbp/Elden-beast-boss-elden-ring-wiki-guide.jpg",
+    "image": "https://i.ibb.co.com/7dJ8SwVt/ELDEN-RING-5-13-2026-8-47-55-PM.png",
     "place": "Erdtree",
     "role": "Final Boss",
     "rating": 9.8,
@@ -130,5 +130,71 @@
     "immunity": "Holy",
     "weakness": "Fire",
     "price": 1940000
+  },
+  {
+    "id": 3,
+    "name": "Rykard, Lord of Blasphemy",
+    "image": "https://i.ibb.co.com/B2dH9fYM/Eldenringrykardcutscene1.jpg",
+    "place": "Volcano Manor",
+    "role": "Shardbearer",
+    "rating": 9.4,
+    "immunity": "Fire",
+    "weakness": "Serpent-Hunter Weapon",
+    "price": 1860000
+  },
+  {
+    "id": 14,
+    "name": "Rellana, Twin Moon Knight",
+    "image": "https://i.ibb.co.com/rRNht5bn/rellana-twin-moon-knight2.png",
+    "place": "Castle Ensis",
+    "role": "DLC Legend Boss",
+    "rating": 9.5,
+    "immunity": "Magic",
+    "weakness": "Bleed",
+    "price": 1880000
+  },
+  {
+    "id": 15,
+    "name": "Midra, Lord of Frenzied Flame",
+    "image": "https://i.ibb.co.com/SXqZZgS3/midra-lord-of-frenzied-flame-bosses-elden-ring-wiki-1200px.png",
+    "place": "Abyssal Woods",
+    "role": "DLC Madness Boss",
+    "rating": 9.6,
+    "immunity": "Madness",
+    "weakness": "Holy Damage",
+    "price": 1910000
+  },
+  {
+    "id": 16,
+    "name": "Commander Gaius",
+    "image": "https://i.ibb.co.com/VWwK0C9Q/commander-gaius-bosses-elden-ring-wiki-1200px.png",
+    "place": "Shadow Keep Back Gate",
+    "role": "DLC Commander",
+    "rating": 8.9,
+    "immunity": "Sleep",
+    "weakness": "Bleed",
+    "price": 1720000
+  },
+  {
+    "id": 17,
+    "name": "Putrescent Knight",
+    "image": "https://i.ibb.co.com/MDQg5s2J/jufq59imxc8d1.jpg",
+    "place": "Stone Coffin Fissure",
+    "role": "DLC Undead Boss",
+    "rating": 9.0,
+    "immunity": "Poison",
+    "weakness": "Holy Damage",
+    "price": 1740000
+  },
+  {
+    "id": 18,
+    "name": "Promised Consort Radahn",
+    "image": "https://i.ibb.co.com/JjPkGBjV/radahn-consort-of-miquella-bosses-elden-ring-wiki-600px.jpg",
+    "place": "Enir-Ilim",
+    "role": "DLC Final Boss",
+    "rating": 10,
+    "immunity": "Holy",
+    "weakness": "Scarlet Rot",
+    "price": 2000000
   }
 ]
