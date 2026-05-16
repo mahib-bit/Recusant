@@ -1,27 +1,28 @@
 
 import './App.css'
-import NavImg from './assets/logo.png'
-import Coin from './assets/dollar.png'
+import Navbar from './Components/Navbar/Navbar'
+import Available from './Components/Available/Available'
+import Selected from './Components/Selected/Selected'
+import { Suspense } from 'react'
+
+const bossesPromise = fetch('bosses.json')
+  .then(res => res.json())
+
+// const bossesPromise = async () =>{
+//   const res =await fetch('bosses.json')
+//   return res.json()}
+
 
 function App() {
 
-
   return (
     <>
-  {/* Navbar----------------------------------------- */}
+      <Navbar />
+      <Suspense fallback={<span className="loading loading-ring loading-md"></span>}>
+        <Available bossesPromise={bossesPromise} />
+      </Suspense>
+      <Selected />
 
-      <div className="navbar bg-base-100 shadow-sm max-w-[1400px] mx-auto my-3">
-        <div className="flex-1">
-          <a className="btn btn-ghost text-xl">
-            <img className='w-[60px] h-[60px]' src={NavImg} alt="Logo" />
-          </a>
-        </div>
-        <div className="flex gap-1.5">
-          <span>60000000000</span>
-          <img className='w-[20px] h-[20px]' src={Coin} alt="Coin" />
-          <span> Coin</span>
-        </div>
-      </div>
     </>
   )
 }

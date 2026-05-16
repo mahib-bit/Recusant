@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "Malenia, Blade of Miquella",
+    "image": "https://i.ibb.co.com/sxC04T8/1024px-Elden-Ring-Screenshot-07.jpg",
+    "place": "Elphael, Brace of the Haligtree",
+    "role": "Shardbearer",
+    "rating": 10,
+    "immunity": "Scarlet Rot",
+    "weakness": "Bleed",
+    "price": 1985000
+  },
+  {
+    "id": 2,
+    "name": "Starscourge Radahn",
+    "image": "https://i.ibb.co.com/Sw8hV2bh/ER-Starscourge-Radahn.png",
+    "place": "Caelid",
+    "role": "Shardbearer",
+    "rating": 9.7,
+    "immunity": "Bleed",
+    "weakness": "Scarlet Rot",
+    "price": 1920000
+  },
+  {
+    "id": 3,
+    "name": "Rykard, Lord of Blasphemy",
+    "image": "https://i.ibb.co.com/B2dH9fYM/Eldenringrykardcutscene1.jpg",
+    "place": "Volcano Manor",
+    "role": "Shardbearer",
+    "rating": 9.4,
+    "immunity": "Fire",
+    "weakness": "Serpent-Hunter Weapon",
+    "price": 1860000
+  },
+  {
+    "id": 4,
+    "name": "Mohg, Lord of Blood",
+    "image": "https://i.ibb.co.com/ZpddYxhj/Mohg.jpg",
+    "place": "Mohgwyn Palace",
+    "role": "Demigod",
+    "rating": 9.6,
+    "immunity": "Bleed",
+    "weakness": "Physical Damage",
+    "price": 1905000
+  },
+  {
+    "id": 5,
+    "name": "Godfrey, First Elden Lord",
+    "image": "https://i.ibb.co.com/ZzH3qXXV/Eldenringgodfrey3.jpg",
+    "place": "Leyndell, Ashen Capital",
+    "role": "Legend Boss",
+    "rating": 9.5,
+    "immunity": "Sleep",
+    "weakness": "Bleed",
+    "price": 1810000
+  },
+  {
+    "id": 6,
+    "name": "Dragonlord Placidusax",
+    "image": "https://i.ibb.co.com/YF5XYPTp/ER-Placidusax-Boss.png",
+    "place": "Crumbling Farum Azula",
+    "role": "Ancient Dragon",
+    "rating": 9.3,
+    "immunity": "Lightning",
+    "weakness": "Pierce Damage",
+    "price": 1760000
+  },
+  {
+    "id": 7,
+    "name": "Maliketh, the Black Blade",
+    "image": "https://i.ibb.co.com/6RGKk2hg/ER-Maliketh-the-Black-Blade.png",
+    "place": "Crumbling Farum Azula",
+    "role": "Legend Boss",
+    "rating": 9.4,
+    "immunity": "Holy",
+    "weakness": "Frostbite",
+    "price": 1835000
+  },
+  {
+    "id": 8,
+    "name": "Morgott, the Omen King",
+    "image": "https://i.ibb.co.com/YF3xCGk9/Morgott.jpg",
+    "place": "Leyndell, Royal Capital",
+    "role": "Demigod",
+    "rating": 9.1,
+    "immunity": "Holy",
+    "weakness": "Slash Damage",
+    "price": 1700000
+  },
+  {
+    "id": 9,
+    "name": "Godrick the Grafted",
+    "image": "https://i.ibb.co.com/qLn2vFDx/ER-Godrick-the-Grafted.jpg",
+    "place": "Stormveil Castle",
+    "role": "Shardbearer",
+    "rating": 8.8,
+    "immunity": "Poison",
+    "weakness": "Fire",
+    "price": 1585000
+  },
+  {
+    "id": 10,
+    "name": "Fire Giant",
+    "image": "https://i.ibb.co.com/FbxBt04w/ER-Fire-Giant.png",
+    "place": "Mountaintops of the Giants",
+    "role": "Legend Boss",
+    "rating": 9.0,
+    "immunity": "Fire",
+    "weakness": "Bleed",
+    "price": 1650000
+  },
+  {
+    "id": 11,
+    "name": "Elden Beast",
+    "image": "https://i.ibb.co.com/7xqmQmbp/Elden-beast-boss-elden-ring-wiki-guide.jpg",
+    "place": "Erdtree",
+    "role": "Final Boss",
+    "rating": 9.8,
+    "immunity": "Holy",
+    "weakness": "Physical Damage",
+    "price": 1999000
+  },
+  {
+    "id": 12,
+    "name": "Radagon of the Golden Order",
+    "image": "https://i.ibb.co.com/7t2tp0wz/Er-Radagon-trying-to-repair-the-ring.jpg",
+    "place": "Erdtree",
+    "role": "Final Boss",
+    "rating": 9.7,
+    "immunity": "Holy",
+    "weakness": "Fire",
+    "price": 1940000
+  }
+]
