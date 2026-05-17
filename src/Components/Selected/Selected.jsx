@@ -2,7 +2,7 @@ import 'react';
 
 const Selected = () => {
     return (
-        <div>
+        <div className='max-w-[1300px] mx-auto'>
             
         </div>
     );

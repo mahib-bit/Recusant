@@ -21,10 +21,14 @@ function App() {
     <>
       <Navbar />
       <div className='flex justify-between items-center max-w-[1300px] mx-auto mb-5'>
-        <h1 className='font-bold text-2xl text-amber-500'>Available Bosses</h1>
+        <h1 className={`text-3xl font-bold ${toggle === true ? 'text-amber-500' : 'text-sky-800'}`}>
+          {
+            toggle === true ? 'Available Bosses' : 'Selected Bosses'
+          }
+        </h1>
         <div>
-          <button className='btn border-r-0 rounded-l-xl bg-yellow-700 font-semibold text-white py-6' onClick={() => setToggle(true)}>Available</button>
-          <button className='btn border-l-0 rounded-r-xl bg-sky-900/50 font-semibold text-white py-6 ' onClick={() => setToggle(false)}>Selected <span>(0)</span></button>
+          <button className={`border-r-0 rounded-l-xl font-semibold text-white px-6 py-4 shadow-2xl ${toggle === true ? 'bg-yellow-700' : 'bg-sky-900/50'}`} onClick={() => setToggle(true)}>Available</button>
+          <button className={`border-l-0 rounded-r-xl font-semibold text-white px-6 py-4 shadow-2xl ${toggle === false ? 'bg-yellow-700' : 'bg-sky-900/50'}`} onClick={() => setToggle(false)}>Selected <span>(0)</span></button>
         </div>
       </div>
       {
