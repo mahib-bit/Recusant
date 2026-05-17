@@ -1,5 +1,6 @@
 import { use } from 'react';
 import Battleicon from '../../assets/battle.png';
+import Rune from '../../assets/rune.png';
 
 const Available = ({ bossesPromise }) => {
 
@@ -50,8 +51,8 @@ const Available = ({ bossesPromise }) => {
                             </div>
 
                             <div className='flex justify-between items-center mt-5'>
-                                <p className='text-lg font-bold'>
-                                    ${boss.price}
+                                <p className='text-lg font-bold flex justify-between items-center'>
+                                   {boss.price} <img className='w-6 h-6 mt-0.5'  src={Rune} alt="Rune" />
                                 </p>
 
                                 <button className='btn bg-yellow-700 text-white'>
