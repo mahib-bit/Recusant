@@ -16,10 +16,11 @@ const bossesPromise = fetch('bosses.json')
 
 function App() {
   const [toggle, setToggle] = useState(true)
+  const [balance, setBalance] = useState(7000000)
 
   return (
     <>
-      <Navbar />
+      <Navbar balance={balance} />
       <div className='flex justify-between items-center max-w-[1300px] mx-auto mb-5'>
         <h1 className={`text-3xl font-bold ${toggle === true ? 'text-amber-500' : 'text-sky-800'}`}>
           {
@@ -32,7 +33,7 @@ function App() {
         </div>
       </div>
       {
-        toggle === true ? <Suspense fallback={<span className=" loading loading-spinner text-warning"></span>}> <Available bossesPromise={bossesPromise} /></Suspense> : <Selected />
+        toggle === true ? <Suspense fallback={<span className=" loading loading-spinner text-warning"></span>}> <Available balance={balance} setBalance={setBalance} bossesPromise={bossesPromise} /></Suspense> : <Selected />
       }
 
     </>
