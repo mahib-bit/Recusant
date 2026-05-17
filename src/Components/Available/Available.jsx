@@ -66,10 +66,10 @@ const Available = ({ bossesPromise }) => {
 
                                 <div className='flex justify-between items-center mt-5'>
                                     <p className='text-lg font-bold flex justify-between items-center'>
-                                        {boss.price} <img className='w-6 h-6 mt-0.5' src={Rune} alt="Rune" />
+                                        {boss.price} <img className='w-7 h-7' src={Rune} alt="Rune" />
                                     </p>
 
-                                    <button className='btn bg-yellow-700 text-white'>
+                                    <button className='btn bg-sky-900/50 text-white'>
                                         Choose
                                     </button>
                                 </div>
