@@ -32,6 +32,28 @@
     "weakness": "Holy Damage",
     "price": 2000000
   },
+    {
+    "id": 14,
+    "name": "Rellana, Twin Moon Knight",
+    "image": "https://i.ibb.co.com/rRNht5bn/rellana-twin-moon-knight2.png",
+    "place": "Castle Ensis",
+    "role": "DLC Legend Boss",
+    "rating": 9.5,
+    "immunity": "Magic",
+    "weakness": "Bleed",
+    "price": 1880000
+  },
+  {
+    "id": 15,
+    "name": "Midra, Lord of Frenzied Flame",
+    "image": "https://i.ibb.co.com/SXqZZgS3/midra-lord-of-frenzied-flame-bosses-elden-ring-wiki-1200px.png",
+    "place": "Abyssal Woods",
+    "role": "DLC Madness Boss",
+    "rating": 9.6,
+    "immunity": "Madness",
+    "weakness": "Holy Damage",
+    "price": 1910000
+  },
   {
     "id": 4,
     "name": "Mohg, Lord of Blood",
@@ -141,28 +163,6 @@
     "immunity": "Fire",
     "weakness": "Serpent-Hunter Weapon",
     "price": 1860000
-  },
-  {
-    "id": 14,
-    "name": "Rellana, Twin Moon Knight",
-    "image": "https://i.ibb.co.com/rRNht5bn/rellana-twin-moon-knight2.png",
-    "place": "Castle Ensis",
-    "role": "DLC Legend Boss",
-    "rating": 9.5,
-    "immunity": "Magic",
-    "weakness": "Bleed",
-    "price": 1880000
-  },
-  {
-    "id": 15,
-    "name": "Midra, Lord of Frenzied Flame",
-    "image": "https://i.ibb.co.com/SXqZZgS3/midra-lord-of-frenzied-flame-bosses-elden-ring-wiki-1200px.png",
-    "place": "Abyssal Woods",
-    "role": "DLC Madness Boss",
-    "rating": 9.6,
-    "immunity": "Madness",
-    "weakness": "Holy Damage",
-    "price": 1910000
   },
   {
     "id": 16,

@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Suspense fallback={<span className="loading loading-ring loading-md"></span>}>
+      <Suspense fallback={<span className="loading loading-spinner text-warning"></span>}>
         <Available bossesPromise={bossesPromise} />
       </Suspense>
       <Selected />
