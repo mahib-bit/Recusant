@@ -2,13 +2,22 @@ import 'react';
 import Battleicon from '../../assets/battle.png';
 import Rune from '../../assets/rune.png';
 import { useState } from 'react';
+import Swal from 'sweetalert2';
+import Shadow from '../../assets/shadow-bg.png'
 
 const BossCard = ({ boss, setBalance, balance }) => {
     const [select, setSelect] = useState(false);
 
     const handleSelect = (boss) => {
         if (balance < boss.price) {
-            alert("Well Someone's Broke! 🤣🫵🏻");
+            Swal.fire({
+                title: " 🤣🫵🏻",
+                text: "Well Someone's Broke!",
+                imageUrl: Shadow,
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: "Custom image"
+            });
             return;
         }
         setSelect(true);
