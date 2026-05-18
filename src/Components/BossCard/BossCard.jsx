@@ -1,4 +1,3 @@
-import 'react';
 import Battleicon from '../../assets/battle.png';
 import Rune from '../../assets/rune.png';
 import Swal from 'sweetalert2';
@@ -95,8 +94,8 @@ const BossCard = ({ boss, setBalance, balance, selectedBosses, setSelectedBosses
 
                     <button disabled={isSelected} onClick={() => {
                         handleSelect(boss)
-                    }} className={`btn  text-white ${isSelected === true ? 'bg-amber-500' : 'bg-sky-900/50'}`}>
-                        {isSelected === true ? 'Selected' : 'Choose'}
+                    }} className={`btn  text-white ${isSelected ? 'bg-amber-500' : 'bg-sky-900/50'}`}>
+                        {isSelected ? 'Selected' : 'Choose'}
                     </button>
                 </div>
             </div>
