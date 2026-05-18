@@ -1,15 +1,18 @@
 import 'react';
 import Battleicon from '../../assets/battle.png';
 import Rune from '../../assets/rune.png';
-import { useState } from 'react';
 import Swal from 'sweetalert2';
 import Shadow from '../../assets/shadow-bg.png'
 import { toast } from 'react-toastify';
 
 const BossCard = ({ boss, setBalance, balance, selectedBosses, setSelectedBosses }) => {
-    const [select, setSelect] = useState(false);
+    const isSelected = selectedBosses.some((selectedBoss) => selectedBoss.id === boss.id);
 
     const handleSelect = (boss) => {
+        if (isSelected) {
+            return;
+        }
+
         if (balance < boss.price) {
             Swal.fire({
                 title: " 🤣🫵🏻",
@@ -27,7 +30,6 @@ const BossCard = ({ boss, setBalance, balance, selectedBosses, setSelectedBosses
             return;
         }
 
-        setSelect(true);
         setBalance(balance - boss.price);
         setSelectedBosses([...selectedBosses, boss]);
     };
@@ -91,10 +93,10 @@ const BossCard = ({ boss, setBalance, balance, selectedBosses, setSelectedBosses
                         {boss.price} <img className='w-7 h-7' src={Rune} alt="Rune" />
                     </p>
 
-                    <button disabled={select} onClick={() => {
+                    <button disabled={isSelected} onClick={() => {
                         handleSelect(boss)
-                    }} className={`btn  text-white ${select === true ? 'bg-amber-500' : 'bg-sky-900/50'}`}>
-                        {select === true ? 'Selected' : 'Choose'}
+                    }} className={`btn  text-white ${isSelected === true ? 'bg-amber-500' : 'bg-sky-900/50'}`}>
+                        {isSelected === true ? 'Selected' : 'Choose'}
                     </button>
                 </div>
             </div>
