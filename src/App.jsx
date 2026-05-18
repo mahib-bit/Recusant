@@ -5,6 +5,8 @@ import Available from './Components/Available/Available'
 import Selected from './Components/Selected/Selected'
 import { Suspense } from 'react'
 import { useState } from 'react';
+import { ToastContainer } from 'react-toastify';
+
 
 const bossesPromise = fetch('bosses.json')
   .then(res => res.json())
@@ -40,7 +42,7 @@ function App() {
       {
         toggle === true ? <Suspense fallback={<span className=" loading loading-spinner text-warning"></span>}> <Available selectedBosses={selectedBosses} setSelectedBosses={setSelectedBosses} balance={balance} setBalance={setBalance} bossesPromise={bossesPromise} /></Suspense> : <Selected  selectedBosses={selectedBosses} removeBoss={removeBoss} />
       }
-
+      <ToastContainer />
     </>
   )
 }

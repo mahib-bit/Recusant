@@ -4,8 +4,9 @@ import Rune from '../../assets/rune.png';
 import { useState } from 'react';
 import Swal from 'sweetalert2';
 import Shadow from '../../assets/shadow-bg.png'
+import { toast } from 'react-toastify';
 
-const BossCard = ({ boss, setBalance, balance ,selectedBosses, setSelectedBosses }) => {
+const BossCard = ({ boss, setBalance, balance, selectedBosses, setSelectedBosses }) => {
     const [select, setSelect] = useState(false);
 
     const handleSelect = (boss) => {
@@ -17,13 +18,19 @@ const BossCard = ({ boss, setBalance, balance ,selectedBosses, setSelectedBosses
                 imageWidth: 400,
                 imageHeight: 200,
                 imageAlt: "Custom image"
-            });
+            })
             return;
         }
+
+        if (selectedBosses.length === 4) {
+            toast(" Cannot select more than 4 bosses");
+            return;
+        }
+
         setSelect(true);
         setBalance(balance - boss.price);
         setSelectedBosses([...selectedBosses, boss]);
-    }
+    };
 
     return (
         <div key={boss.id}
@@ -93,6 +100,7 @@ const BossCard = ({ boss, setBalance, balance ,selectedBosses, setSelectedBosses
             </div>
         </div>
     );
+
 };
 
 export default BossCard;
