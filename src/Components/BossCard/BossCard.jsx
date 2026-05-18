@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Swal from 'sweetalert2';
 import Shadow from '../../assets/shadow-bg.png'
 
-const BossCard = ({ boss, setBalance, balance }) => {
+const BossCard = ({ boss, setBalance, balance ,selectedBosses, setSelectedBosses }) => {
     const [select, setSelect] = useState(false);
 
     const handleSelect = (boss) => {
@@ -22,6 +22,7 @@ const BossCard = ({ boss, setBalance, balance }) => {
         }
         setSelect(true);
         setBalance(balance - boss.price);
+        setSelectedBosses([...selectedBosses, boss]);
     }
 
     return (

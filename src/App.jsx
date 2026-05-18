@@ -16,8 +16,13 @@ const bossesPromise = fetch('bosses.json')
 
 function App() {
   const [toggle, setToggle] = useState(true)
-  const [balance, setBalance] = useState(7000000)
+  const [balance, setBalance] = useState(11000000)
+  const [selectedBosses, setSelectedBosses] = useState([])
 
+  const removeBoss = (b) => {
+    const updatedSelectedBosses = selectedBosses.filter((boss) => boss.id !== b.id);
+    setSelectedBosses(updatedSelectedBosses);
+    }
   return (
     <>
       <Navbar balance={balance} />
@@ -29,11 +34,11 @@ function App() {
         </h1>
         <div>
           <button className={`border-r-0 rounded-l-xl font-semibold text-white px-6 py-4 shadow-2xl ${toggle === true ? 'bg-yellow-700' : 'bg-sky-900/50'}`} onClick={() => setToggle(true)}>Available</button>
-          <button className={`border-l-0 rounded-r-xl font-semibold text-white px-6 py-4 shadow-2xl ${toggle === false ? 'bg-yellow-700' : 'bg-sky-900/50'}`} onClick={() => setToggle(false)}>Selected <span>(0)</span></button>
+          <button className={`border-l-0 rounded-r-xl font-semibold text-white px-6 py-4 shadow-2xl ${toggle === false ? 'bg-yellow-700' : 'bg-sky-900/50'}`} onClick={() => setToggle(false)}>Selected <span>({selectedBosses.length})</span></button>
         </div>
       </div>
       {
-        toggle === true ? <Suspense fallback={<span className=" loading loading-spinner text-warning"></span>}> <Available balance={balance} setBalance={setBalance} bossesPromise={bossesPromise} /></Suspense> : <Selected />
+        toggle === true ? <Suspense fallback={<span className=" loading loading-spinner text-warning"></span>}> <Available selectedBosses={selectedBosses} setSelectedBosses={setSelectedBosses} balance={balance} setBalance={setBalance} bossesPromise={bossesPromise} /></Suspense> : <Selected  selectedBosses={selectedBosses} removeBoss={removeBoss} />
       }
 
     </>
